@@ -146,7 +146,7 @@ export abstract class Extractor<withContent = never> {
           if (count === files.length) {
             break;
           }
-          shouldSkip = ({ name }: FileHeader) => !files.includes(name);
+          shouldSkip = ({ name }: FileHeader) => !files.find(n=>n.endsWith(name));
         } else if (files) {
           shouldSkip = (fileHeader) => !files(fileHeader);
         }
