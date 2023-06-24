@@ -1,6 +1,6 @@
 {
   "name": "node-unrar-js-humi",
-  "version": "0.0.0-semantic-release",
+  "version": "0.0.2",
   "description": "Pure JavaScript RAR archive extractor by compile the official unrar lib by Emscripten.",
   "homepage": "https://github.com/YuJianrong/node-unrar.js",
   "bugs": {
