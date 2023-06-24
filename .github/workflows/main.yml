@@ -52,6 +52,6 @@ jobs:
           name: dist
       - name: Release
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.ACTION_ACCESS_TOKEN }}
           NPM_TOKEN: ${{ secrets.npm_token }}
         run: npx semantic-release
