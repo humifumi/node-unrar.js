@@ -4,17 +4,17 @@
 module.exports = {
   root: true,
   extends: ['eslint:recommended', 'prettier'],
-  plugins: ['prettier'],
+  // plugins: ['prettier'],
   env: { browser: true, es6: true, node: true },
   rules: {
-    'prettier/prettier': [
-      'error',
-      {
-        singleQuote: true,
-        printWidth: 100,
-        trailingComma: 'all',
-      },
-    ],
+    // 'prettier/prettier': [
+    //   'error',
+    //   {
+    //     singleQuote: true,
+    //     printWidth: 100,
+    //     trailingComma: 'all',
+    //   },
+    // ],
   },
   parserOptions: {
     ecmaVersion: 2018,
@@ -28,19 +28,19 @@ module.exports = {
         'eslint:recommended',
         'plugin:@typescript-eslint/eslint-recommended',
         'plugin:@typescript-eslint/recommended',
-        'prettier',
+        // 'prettier',
       ],
       parser: '@typescript-eslint/parser',
       parserOptions: {
         ecmaVersion: 2018,
         sourceType: 'module',
       },
-      plugins: ['@typescript-eslint', 'prettier'],
+      plugins: ['@typescript-eslint'],
       rules: {
-        'prettier/prettier': [
-          'error',
-          { singleQuote: true, printWidth: 100, trailingComma: 'all' },
-        ],
+        // 'prettier/prettier': [
+        //   'info',
+        //   { singleQuote: true, printWidth: 100, trailingComma: 'all' },
+        // ],
         '@typescript-eslint/no-unused-vars': 0,
       },
       globals: {
